@@ -9,10 +9,19 @@
           "manifest": "./src/webparts/reactWebpart/ReactWebpartWebPart.manifest.json"
         }
       ]
+    },
+    "p-061-react-crud-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/p061ReactCrud/P061ReactCrudWebPart.js",
+          "manifest": "./src/webparts/p061ReactCrud/P061ReactCrudWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "ReactWebpartWebPartStrings": "lib/webparts/reactWebpart/loc/{locale}.js"
+    "ReactWebpartWebPartStrings": "lib/webparts/reactWebpart/loc/{locale}.js",
+    "P061ReactCrudWebPartStrings": "lib/webparts/p061ReactCrud/loc/{locale}.js"
   }
 }
