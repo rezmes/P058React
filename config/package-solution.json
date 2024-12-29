@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "p-058-react-client-side-solution",
+    "id": "374f0da1-66ac-4a7e-bfc9-ea680a57a5b4",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/p-058-react.sppkg"
+  }
+}
