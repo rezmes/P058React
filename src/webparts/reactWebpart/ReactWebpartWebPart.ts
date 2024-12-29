@@ -10,6 +10,7 @@ import {
 import * as strings from 'ReactWebpartWebPartStrings';
 import ReactWebpart from './components/ReactWebpart';
 import { IReactWebpartProps } from './components/IReactWebpartProps';
+import { toAbsoluteUrl } from '@pnp/sp';
 
 export interface IReactWebpartWebPartProps {
   description: string;
@@ -21,7 +22,12 @@ export default class ReactWebpartWebPart extends BaseClientSideWebPart<IReactWeb
     const element: React.ReactElement<IReactWebpartProps > = React.createElement(
       ReactWebpart,
       {
-        description: this.properties.description
+        description: this.properties.description,
+//                 //  {/* ---------------P059  ReadSiteProperties----------------- */}
+        absoluteurl: this.context.pageContext.web.absoluteUrl,
+        sitetitle: this.context.pageContext.web.title,
+        relativeurl: this.context.pageContext.web.serverRelativeUrl,
+        username: this.context.pageContext.user.displayName
       }
     );
 
