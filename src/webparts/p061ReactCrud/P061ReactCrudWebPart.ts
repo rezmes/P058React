@@ -21,7 +21,8 @@ export default class P061ReactCrudWebPart extends BaseClientSideWebPart<IP061Rea
     const element: React.ReactElement<IP061ReactCrudProps > = React.createElement(
       P061ReactCrud,
       {
-        description: this.properties.description
+        description: this.properties.description,
+        websiteurl: this.context.pageContext.web.absoluteUrl
       }
     );
 

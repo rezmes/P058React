@@ -3,6 +3,10 @@ import styles from './P061ReactCrud.module.scss';
 import { IP061ReactCrudProps } from './IP061ReactCrudProps';
 import { escape } from '@microsoft/sp-lodash-subset';
 
+// P061 Display List Items of a List Using React
+import * as jQuery from 'jquery';
+
+
 export default class P061ReactCrud extends React.Component < IP061ReactCrudProps, {} > {
   public render(): React.ReactElement<IP061ReactCrudProps> {
     return(
