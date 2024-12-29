@@ -24,7 +24,8 @@
     "@types/webpack-env": "1.13.1",
     "jquery": "^3.3.1",
     "react": "15.6.2",
-    "react-dom": "15.6.2"
+    "react-dom": "15.6.2",
+    "typescript": "^2.4.2"
   },
   "resolutions": {
     "@types/react": "15.6.6"
